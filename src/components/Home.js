@@ -1,9 +1,9 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import tailor1 from './images/tailor-image1.jpg'
-import tailor2 from './images/tailor-image2.jpg'
-import tailor3 from './images/tailor-image3.jpg'
+import tailor1 from './images/tailor-image1.jpg';
+import tailor2 from './images/tailor-image2.jpg';
+import tailor3 from './images/tailor-image3.jpg';
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [tailor1, tailor2, tailor3];
