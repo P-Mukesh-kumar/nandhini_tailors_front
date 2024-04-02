@@ -1,8 +1,8 @@
 // About.js
 import React from 'react';
 import './About.css';
-import tailorImage from './images/shirt.jpg'
-import ownerImage from './images/owner.jpg'
+import tailorImage from './images/shirt.jpg';
+import ownerImage from './images/owner.jpg';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
