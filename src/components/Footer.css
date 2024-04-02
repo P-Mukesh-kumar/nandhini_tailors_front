@@ -1,0 +1,91 @@
+/* Footer.css */
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-link {
+  display: flex;
+  flex-flow: column nowrap; /* Display links in a column */
+}
+.icons{
+  margin-left: 20px;
+}
+
+.page-link a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px; /* Add margin between links */
+  border-radius: 50%; /* Make it circular */
+  padding: 5px; /* Add padding for better appearance */
+  background-color: transparent; /* Set initial background color */
+}
+
+.page-link a:hover {
+  color:lightblue; /* Change font color on hover */
+  
+}
+
+.social-media a {
+  
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 30px;
+}
+.social-media h2{
+  color: white;
+  text-align: center;
+}
+.social-media a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: white; /* Set initial background color */
+  border-radius: 50%; /* Make it circular */
+  padding: 5px; /* Add padding for better appearance */
+}
+
+.face:hover {
+  color: blue; /* Change font color on hover */
+  background-color: white; /* Change background color on hover */
+}
+
+.youtube:hover {
+  color: red; /* Change font color on hover */
+  background-color: white ; /* Change background color on hover */
+}
+.x:hover {
+  color: white; /* Change font color on hover */
+  background-color: black; /* Change background color on hover */
+}
+.insta:hover {
+  color: white; /* Change font color on hover */
+  background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);/* Change background color on hover */
+}
+.contact-detail {
+  display: flex;
+  flex-flow: column nowrap; /* Display details in a column */
+}
+
+.contact-detail a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px; /* Add margin between details */
+  border-radius: 50%; /* Make it circular */
+  padding: 5px; /* Add padding for better appearance */
+  background-color: transparent; /* Set initial background color */
+}
+
+.contact-detail a:hover {
+  color: red; /* Change font color on hover */
+ 
+}

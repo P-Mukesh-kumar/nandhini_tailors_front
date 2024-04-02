@@ -1,0 +1,154 @@
+/* About.css */
+
+/* Main section styles */
+.about-section {
+  background-color: #eeeded;
+  padding: 50px 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  display: flex;
+  align-items: center;
+}
+
+.left-description {
+  flex: 1;
+  text-align: left;
+}
+
+.left-description h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.left-description h1 {
+  color: #28a745;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.left-description p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.right-description {
+  margin-right: 20px;
+}
+
+.right-description img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Card styles */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.mission-vision-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* Owner details styles */
+.owner-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 50px 10px;
+  align-items: center;
+}
+
+.owner-image {
+  flex: 0 0 auto;
+}
+
+.owner-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #28a745;
+}
+
+.vertical-line {
+  border-left: 2px solid #28a745;
+  height: 240px;
+  margin: 0 20px 0 40px;
+}
+
+.owner-info {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.owner-info:hover {
+  transform: translateY(-10px);
+}
+
+.owner-info h3 {
+  color: #28a745;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.owner-info p {
+  color: #555;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Timeline styles */
+.timeline {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
