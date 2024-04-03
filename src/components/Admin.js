@@ -1,8 +1,8 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import './Admin.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKey } from '@fortawesome/free-solid-svg-icons';
-import axios from 'axios';
+// import axios from 'axios';
 const  Admin = () => {
     const [email, setEmail] = useState('');
     const [otp, setOtp] = useState('');
@@ -25,7 +25,7 @@ const  Admin = () => {
       });
 
      console.log(response);
-     if (response.ok==true){
+     if (response.ok===true){
         setIsEmailSent(true);  
      }
      
@@ -47,7 +47,7 @@ const  Admin = () => {
       });
 
       console.log(response);
-      if (response.ok==true){
+      if (response.ok===true){
         setIsOtpVerified(true);
       }
       
@@ -81,7 +81,7 @@ const  Admin = () => {
 
   return (
     <div className='body'>
-      {isEmailSent ? (
+      {!isEmailSent ? (
         <div className='boxEmail'>
         <form onSubmit={handleEmailSubmit} className='form'>
         <h1>E-mail verification</h1>
@@ -101,7 +101,7 @@ const  Admin = () => {
           </div>
         </form>
         </div>
-      ) : isOtpVerified ? (
+      ) : !isOtpVerified ? (
         <div className='boxOTP'>
         <form onSubmit={handleOtpSubmit} className='formOTP'>
         <h1>Enter your OTP  </h1>
