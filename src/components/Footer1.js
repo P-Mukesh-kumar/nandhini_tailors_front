@@ -3,7 +3,7 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faShoppingBag, faEnvelope, faPhone, faMapMarker, faX } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -26,17 +26,23 @@ const Footer = () => {
         </div>
         <div className='social-media'>
           <h2>social media</h2>
-          <div className='icons'>
+          {/* <div className='icons'>
           <a href='#'className='face'><FontAwesomeIcon icon={faFacebook} /></a>
           <a href='#'className='youtube'><FontAwesomeIcon icon={faYoutube} /></a>
           <a href='#' className='x'><FontAwesomeIcon icon={faX}/></a>
           <a href='#' className='insta'><FontAwesomeIcon icon={faInstagram} /></a>
+          </div> */}
+          <div className='icons'>
+            <NavLink to='/' className='face'><FontAwesomeIcon icon={faFacebook} /></NavLink>
+            <NavLink to='/'className='youtube'><FontAwesomeIcon icon={faYoutube} /></NavLink>
+            <NavLink to='/' className='x'><FontAwesomeIcon icon={faX}/></NavLink>
+            <NavLink to='/' className='insta'><FontAwesomeIcon icon={faInstagram} /></NavLink>
           </div>
         </div>
         <div className='contact-detail'>
-          <a href='mailto:nandhinivel79@gmail.com'> <FontAwesomeIcon icon={faPhone} /> Email Us</a>
-          <a href='tel:9043667457'><FontAwesomeIcon icon={faEnvelope} /> Contact Us</a>
-          <a href='https://maps.app.goo.gl/nn33tzWJNRduKXKQ8'><FontAwesomeIcon icon={faMapMarker}/> Location</a>
+          <NavLink to='mailto:nandhinivel79@gmail.com'> <FontAwesomeIcon icon={faPhone} /> Email Us</NavLink>
+          <NavLink to='tel:9043667457'><FontAwesomeIcon icon={faEnvelope} /> Contact Us</NavLink>
+          <NavLink to='https://maps.app.goo.gl/nn33tzWJNRduKXKQ8'><FontAwesomeIcon icon={faMapMarker}/> Location</NavLink>
         </div>
       </div>
     </footer> 
