@@ -14,7 +14,7 @@ const Contact = (props) => {
     e.preventDefault(); // Prevent default form submission behavior
 
     // Send contact details to the server
-    axios.post('http://localhost:5000/verify', {
+    axios.post('https://nandhini-tailors-back.onrender.com:5000/verify', {
       contactDetails: customerDetails,
     })
       .then((response) => {

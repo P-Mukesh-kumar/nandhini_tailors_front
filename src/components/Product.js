@@ -47,7 +47,7 @@ const Product = () => {
 
     try {
       // Send a request to save customer details and get the inserted customer document
-      const customerResponse = await axios.post('http://localhost:5000/posts', {
+      const customerResponse = await axios.post('https://nandhini-tailors-back.onrender.com:5000/posts', {
         productDetails:selectedProducts,
        customerDetails,
       });
@@ -62,7 +62,7 @@ const Product = () => {
         }));
 
         // Send email and save order details in MongoDB
-        const response = await axios.post('http://localhost:5000/posts/send-email', {
+        const response = await axios.post('https://nandhini-tailors-back.onrender.com:5000/posts/send-email', {
           customerId,
           customerDetails,
           orderDetails,

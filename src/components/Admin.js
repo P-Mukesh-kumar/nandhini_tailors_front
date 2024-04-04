@@ -8,7 +8,7 @@ const  Admin = () => {
     const [otp, setOtp] = useState('');
     const [isEmailSent, setIsEmailSent] = useState(false);
     const [isOtpVerified,setIsOtpVerified]  =useState(false);
-    const url = 'http://localhost:5000';
+    const url = 'https://nandhini-tailors-back.onrender.com:5000';
  
   
 
