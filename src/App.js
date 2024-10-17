@@ -21,7 +21,6 @@ const App = () => {
       {/* Conditionally render header based on route */}
       {!isOnAdminPage && !isTest && (
         <header>
-         
           <h1>Nandhini Tailors</h1>
           <hr />
           <Navbar />
